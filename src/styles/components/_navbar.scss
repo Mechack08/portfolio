@@ -1,0 +1,42 @@
+.navbar-container {
+    padding: $mp-smscreen $mp-mdscreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navigations {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .dark-light {
+        color: $white-color;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .hide-icon {
+            display: none;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        span a {
+            transition: color .3s ease-out;
+            letter-spacing: 1.1px;
+
+            &:hover {
+                color: $app-color;
+            }
+        }
+
+        span a.active {
+            color: $app-color;
+        }
+    }
+}
