@@ -1,0 +1,129 @@
+section {
+    padding: $mp-mdscreen $mp-lgscreen;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: $mp-smscreen;
+
+        span:nth-child(1) {
+            color: $gray-color;
+            font-weight: 300;
+            letter-spacing: 1.2px;
+        }
+        span:nth-child(2) {
+            color: $white-color;
+            font-weight: 700;
+            font-size: 1.6rem;
+            letter-spacing: 1.2px;
+        }
+    }
+    .content {
+        display: flex;
+        gap: 3rem;
+
+        .image {
+            flex: 1;
+            position: relative;
+            
+            img {
+                border-radius: 1rem;
+                transform: rotate(15deg);
+                transition: all .3s ease-out;
+
+                &:hover {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        .image::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $second-color;
+            border-radius: 1rem;
+        }
+
+        .description {
+            flex: 2;
+            position: relative;
+
+            article {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1.5rem;
+
+                .experience {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 200px;
+                    height: 200px;
+                    background-color: $dark-color;
+                    border-radius: 0.5rem;
+                    cursor: default;
+                    transition: all .3s ease-out;
+                    border: 2px solid $second-color;
+
+                    &:hover {
+                        transform: translateY(-0.5rem);
+                    }
+
+                    .icon {
+                        font-size: 2rem;
+                        color: $app-color;
+                    }
+                    span {
+                        color: $gray-color;
+                    }
+                    span:nth-child(2) {
+                        font-size: 1.2rem;
+                        color: $white-color;
+                        margin: 1rem 0;
+                    }
+                    span:nth-child(3) {
+                        font-weight: 300;
+                        margin-bottom: 0.5rem;
+                    }
+                    span:nth-child(4) {
+                        font-weight: 300;
+                        font-size: 0.65em;
+                        color: $app-color;
+                    }
+                }
+            }
+
+            p {
+                color: $gray-color;
+                letter-spacing: 1.2px;
+            }
+
+            a {
+                display: block;
+                width: 150px;
+                height: 50px;
+                background-color: $app-color;
+                color: $white-color;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 2px;
+                position: absolute;
+                right: 0;
+                bottom: -25px;
+                font-size: 1.1rem;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                transition: all .3s ease-out;
+
+                &:hover {
+                    background-color: $app-color-hover;
+                }
+            }
+        }
+    }
+}
