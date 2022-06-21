@@ -1,0 +1,7 @@
+.first-section,
+.second-section {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
