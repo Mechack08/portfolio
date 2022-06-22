@@ -89,3 +89,43 @@ export const designSkills = [
     level: "47",
   },
 ];
+
+export const portfolioCode = [
+  {
+    title: "Furniture Store",
+    link: "https://mechack08.github.io/furniture-store/?",
+    img: "./portfolio/furniture-store.jpg",
+  },
+  {
+    title: "Marvel Quiz",
+    link: "https://marvel-quiz-d1b6c.firebaseapp.com/",
+    img: "./portfolio/marvel-quizz.jpg",
+  },
+  {
+    title: "Grand Hotel",
+    link: "https://mechack08.github.io/Grand-Hotel/",
+    img: "./portfolio/grandhotel.jpg",
+  },
+  {
+    title: "My Portfolio and Blog",
+    img: "./portfolio/portfolio-and-blog.jpg",
+  },
+  {
+    title: "8pro Gym",
+    link: "https://mechack08.github.io/gymn-website/",
+    img: "./portfolio/8pro-gym.jpg",
+  },
+];
+
+export const portfolioDesign = [
+  {
+    title: "Fast food delivery",
+    link: "https://dribbble.com/shots/18399936-Restaurant-App",
+    img: "./portfolio/Fast-Food-HiFi.jpg",
+  },
+  {
+    title: "Login Form",
+    link: "https://dribbble.com/shots/18552531-Login-Form",
+    img: "./portfolio/login-form.jpg",
+  },
+];
