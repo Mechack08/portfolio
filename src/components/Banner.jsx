@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedinIn, FaTwitter, FaGithub, FaDribbble } from "react-icons/fa";
+import CV from "../assets/cv/Cv 8pro English.pdf";
 
 const Banner = () => {
   return (
@@ -51,8 +52,14 @@ const Banner = () => {
         <img src="./8pro-2-removebg-2.png" alt="kambalemechack" />
       </div>
       <div className="buttons">
-        <button>Download CV</button>
-        <button>Contact me</button>
+        <button>
+          <a href={CV} download="kambale-mechack-cv">
+            Download CV
+          </a>
+        </button>
+        <button>
+          <a href="#contact">Contact me</a>
+        </button>
       </div>
     </div>
   );
