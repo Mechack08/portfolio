@@ -1,0 +1,101 @@
+.footer {
+    background-color: $dark-color;
+    padding: $mp-smscreen;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .left-side {
+        flex: 2;
+        color: $gray-color;
+        font-weight: 300;
+        min-width: 350px;
+
+        span {
+            display: block;
+            margin-bottom: 1rem;
+            color: $white-color;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+
+        .socials {
+            span {
+                font-size: 1.1rem;
+                display: block;
+                margin-top: 1rem;
+                letter-spacing: 1.2px;
+            }
+            a {
+                display: inline-block;
+                margin-right: 1rem;
+                position: relative;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                font-size: 1.2rem;
+                border: 2px solid $second-color;
+                border-radius: 50%;
+                color: $second-color;
+                overflow: hidden;
+                transition: all .3s ease-out;
+
+                &:hover {
+                    color: $app-color;
+                    z-index: 10;
+                    border: 2px solid $app-color;
+                }
+            }
+            a::before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $white-color;
+                border-radius: 50%;
+                transform: scale(2);
+                transform: translate(-100%, 100%);
+                z-index: -1;
+            }
+            a:hover::before {
+                animation: linksAnim 1s ease-out forwards;
+            }
+        }
+    }
+    .right-side {
+        flex: 1;
+        min-width: 350px;
+        position: relative;
+
+        span {
+           position: absolute;
+           bottom: 0;
+           right: 0;
+           font-size: 0.85em;
+           color: $gray-color;
+           font-weight: 300;
+        }
+    }
+}
+
+@keyframes linksAnim {
+    0% {
+        transform: translate(-100%, 100%);
+        background-color: $white-color;
+    }
+    50% {
+        transform: translate(50%, -50%);
+        background-color: $white-color;
+    }
+    90% {
+        transform: translate(0, 0);
+        background-color: $white-color;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
