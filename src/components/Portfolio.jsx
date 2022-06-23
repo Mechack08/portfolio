@@ -4,7 +4,7 @@ import { portfolioCode, portfolioDesign } from "../data";
 
 const Portfolio = () => {
   return (
-    <section id="portofio">
+    <section id="portfolio">
       <div className="header">
         <span>What I have done ?</span>
         <span>Portfolio</span>
