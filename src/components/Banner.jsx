@@ -1,23 +1,38 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaTwitter, FaGithub, FaDribbble } from "react-icons/fa";
 
 const Banner = () => {
   return (
     <div className="banner-container">
       <div className="social-icons">
-        <Link to="/">
+        <a
+          href="https://www.linkedin.com/in/mechack-makasi-172418126/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedinIn className="social-icon" />
-        </Link>
-        <Link to="/">
+        </a>
+        <a
+          href="https://twitter.com/MakasiMechack"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaTwitter className="social-icon" />
-        </Link>
-        <Link to="/">
+        </a>
+        <a
+          href="https://github.com/Mechack08"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub className="social-icon" />
-        </Link>
-        <Link to="/">
+        </a>
+        <a
+          href="https://dribbble.com/Mechack08"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaDribbble className="social-icon" />
-        </Link>
+        </a>
       </div>
       <div className="infos">
         <span className="function">
