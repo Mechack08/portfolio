@@ -1,6 +1,5 @@
 import React from "react";
 import { FaAward, FaUsers, FaProjectDiagram } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -41,7 +40,7 @@ const About = () => {
             knowledge in computer science. Udemy has been one of my favorite
             online courses platform.
           </p>
-          <Link to="#contact">Let's talk</Link>
+          <a href="#contact">Let's talk</a>
         </div>
       </div>
     </section>
