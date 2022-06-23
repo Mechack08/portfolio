@@ -83,11 +83,17 @@
         }
         button:nth-child(1) {
             border: 2px solid $app-color;
-            color: $app-color;
             transition: all .3s ease-out;
+
+            a {
+                color: $app-color;
+                transition: all .3s ease-out;
+            }
 
             &:hover {
                 background-color: $app-color;
+            }
+            &:hover a {
                 color: $white-color;
             }
         }
