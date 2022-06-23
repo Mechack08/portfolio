@@ -21,9 +21,23 @@ $mp-smscreen: 32px;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 1rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $app-color;
+    border-radius: 0.25rem;
+}
+
 body {
     background-color: $bg-color;
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 
 a {
@@ -66,4 +80,45 @@ img {
 .title-underline::after {
     background-color: $app-color;
     width: 40%;
+}
+
+.btn-up {
+    width: 50px;
+    height: 50px;
+    background-color: $second-color;
+    border-radius: 0.25rem;
+    position: fixed;
+    right: 1rem;
+    top: 80%;
+    box-shadow: 10px 4px 10px #0000;
+    cursor: pointer; 
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: relative;
+        z-index: 100;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        width: 1.5px;
+        height: 50%;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $gray-color;
+    }
+    &::after {
+        transform-origin: top;
+        transform: rotate(30deg);
+    }
+    &::before {
+        transform-origin: top;
+        transform: rotate(-30deg);
+    }
 }
