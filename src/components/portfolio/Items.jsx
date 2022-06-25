@@ -13,7 +13,7 @@ const Items = ({ type, data }) => {
                 <span>{title}</span>
                 {link && (
                   <a href={link} target="_blank" rel="noopener noreferrer">
-                    Visite
+                    Visit
                   </a>
                 )}
               </div>
