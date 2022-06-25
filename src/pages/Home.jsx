@@ -25,7 +25,7 @@ const Home = () => {
   }, [scrollPosition, showClass]);
 
   return (
-    <>
+    <div className="wrapper">
       <Header />
       <About />
       <Resume />
@@ -35,7 +35,7 @@ const Home = () => {
       <div className={showClass && "btn-up"}>
         <a href="#home">up</a>
       </div>
-    </>
+    </div>
   );
 };
 
