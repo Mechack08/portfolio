@@ -10,6 +10,7 @@ section {
 
             .content {
                 display: flex;
+                justify-content: start;
                 gap: 1rem;
 
                 .icon {
@@ -124,6 +125,27 @@ section {
                         transform: translateY(-50%);
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .parts {
+        .part-one {
+            .content {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+    }
+}
+@media screen and (max-width: 950px){
+    .parts {
+        .part-one {
+            .content {
+                flex-direction: row;
+                align-items: flex-start;
             }
         }
     }
