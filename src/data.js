@@ -129,3 +129,39 @@ export const portfolioDesign = [
     img: "./portfolio/login-form.jpg",
   },
 ];
+
+export const articles = [
+  {
+    id: 1,
+    title: "Node JS comme Backend, Quelle difference avec PHP ?",
+    date: "27-06-2022",
+    author: "8pro, Author",
+    lang: "French",
+    cotegory: "Web Coding Backed",
+    content:
+      "Si comme moi vous perdez les derniers tweets, n'ayez crainte j'ai la solution pour vous ! Par défaut, la timeline de Twitter a été basculé pour une organisation basée sur un algorithme mais il est possible de revenir en arrière pour une organisation. Si comme moi vous perdez les derniers tweets, n'ayez crainte j'ai la solution pour vous ! Par défaut, la timeline de Twitter a été basculé pour une organisation basée sur un algorithme mais il est possible de revenir en arrière pour une organisation.",
+    img: "./articles/Node-Vs-PHP-SimilarTech.png",
+  },
+  {
+    id: 2,
+    title: "Comment lier une page HTML avec du CSS ?",
+    date: "18-06-2022",
+    author: "8pro, Author",
+    lang: "French",
+    cotegory: "Web Coding Frontend",
+    content:
+      "Si comme moi vous perdez les derniers tweets, n'ayez crainte j'ai la solution pour vous ! Par défaut, la timeline de Twitter a été basculé pour une organisation basée sur un algorithme mais il est possible de revenir en arrière pour une organisation. Si comme moi vous perdez les derniers tweets, n'ayez crainte j'ai la solution pour vous ! Par défaut, la timeline de Twitter a été basculé pour une organisation basée sur un algorithme mais il est possible de revenir en arrière pour une organisation.",
+    img: "./articles/html-css.jpg",
+  },
+  {
+    id: 3,
+    title: "Comment creer un input text avec AdobeXD ?",
+    date: "03-04-2022",
+    author: "8pro, Author",
+    lang: "French",
+    cotegory: "Web Design",
+    content:
+      "Si comme moi vous perdez les derniers tweets, n'ayez crainte j'ai la solution pour vous ! Par défaut, la timeline de Twitter a été basculé pour une organisation basée sur un algorithme mais il est possible de revenir en arrière pour une organisation. Si comme moi vous perdez les derniers tweets, n'ayez crainte j'ai la solution pour vous ! Par défaut, la timeline de Twitter a été basculé pour une organisation basée sur un algorithme mais il est possible de revenir en arrière pour une organisation.",
+    img: "./articles/input-adobxd.png",
+  },
+];
