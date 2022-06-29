@@ -32,7 +32,7 @@ const Home = () => {
       <Portfolio />
       <Contact />
       <Footer />
-      <div className={showClass && "btn-up"}>
+      <div className={showClass ? "btn-up" : ""}>
         <a href="#home">up</a>
       </div>
     </div>
