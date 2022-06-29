@@ -1,0 +1,36 @@
+.display__comment {
+    margin-top: 1.5rem;
+    letter-spacing: 1.2px;
+    
+    .user-infos {
+        display: flex;
+        margin-bottom: 0.25rem;
+
+        .img-wrapper {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .infos {
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+
+            h3 {
+                font-weight: 600;
+                color: $white-color;
+            }
+            span {
+                font-weight: 300;
+            }
+        }
+    }
+    p {
+        font-size: 0.9rem;
+        color: $white-color;
+    }
+}
