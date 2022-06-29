@@ -2,7 +2,6 @@ import React from "react";
 import CommentForm from "./CommentForm";
 
 const SingleArticle = ({ data }) => {
-  console.log(data);
   return (
     <article className="container">
       <span className="title">{data.title}</span>
