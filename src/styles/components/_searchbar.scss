@@ -1,6 +1,5 @@
 .searchbar-container {
     display: flex;
-    justify-content: space-between;
     gap: 1rem;
     height: 50px;
 
@@ -64,6 +63,24 @@
             transform: translateY(-50%);
             font-size: 1.6rem;
             color: $gray-color;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .searchbar-container {
+        flex-direction: column;
+        height: auto;
+
+        .serchbar {
+            input {
+                height: 50px;
+            }
+        }
+        .selection {
+            select {
+                height: 50px;
+            }
         }
     }
 }
