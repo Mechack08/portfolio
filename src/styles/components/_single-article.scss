@@ -1,0 +1,28 @@
+article.container {
+    padding: $mp-smscreen $mp-lgscreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: $gray-color;
+
+    span,
+    p {
+        letter-spacing: 1.2px;
+    }
+    span.title {
+        font-size: clamp(20px, 2rem, 40px);
+        color: $white-color;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    article.container {
+        padding: $mp-smscreen $mp-mdscreen;
+    }    
+}
+@media screen and (max-width: 650px) {
+    article.container {
+        padding: $mp-smscreen $mp-smscreen;
+    }    
+}
