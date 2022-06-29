@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { splitText } from "../helper";
 
 const ArticlesList = ({ data }) => {
-  console.log(splitText(data[0].content));
   return (
     <div className="article-list">
       {data.map(({ id, title, author, date, lang, content, img }) => {
