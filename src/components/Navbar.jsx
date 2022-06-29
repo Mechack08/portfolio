@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FiSun } from "react-icons/fi";
 import { HiMoon } from "react-icons/hi";
 import Logo from "../../src/assets/Logo.svg";
@@ -8,6 +8,17 @@ const Navbar = () => {
   const [widthSize, setWidthSize] = useState(window.innerWidth);
   const [menuClass, setMenuClass] = useState("menu-humberger none");
   const [hideMenus, setHideMenus] = useState("hide");
+
+  const location = useLocation();
+
+  const activeLink = (path) => {
+    let class_name = undefined;
+    if (location.pathname === path) {
+      class_name = "active";
+    }
+
+    return class_name;
+  };
 
   const handleClass = () => {
     if (menuClass === "menu-humberger none") {
@@ -50,21 +61,33 @@ const Navbar = () => {
         </div>
         <nav className={hideMenus}>
           <span>
-            <a a href="#home" className="active">
-              Home
-            </a>
+            {location.pathname === "/" ? (
+              <a href="#home" className={activeLink("/")}>
+                Home
+              </a>
+            ) : (
+              <Link to="/" className={activeLink("/")}>
+                Home
+              </Link>
+            )}
           </span>
+          {location.pathname === "/" && (
+            <>
+              <span>
+                <a href="#about">About me</a>
+              </span>
+              <span>
+                <a href="#resume">Resume</a>
+              </span>
+              <span>
+                <a href="#portfolio">Portfolio</a>
+              </span>
+            </>
+          )}
           <span>
-            <a href="#about">About me</a>
-          </span>
-          <span>
-            <a href="#resume">Resume</a>
-          </span>
-          <span>
-            <a href="#portfolio">Portfolio</a>
-          </span>
-          <span>
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog" className={activeLink("/blog")}>
+              Blog
+            </Link>
           </span>
         </nav>
         <div className={menuClass} onClick={handleClass}>
