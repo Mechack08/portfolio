@@ -13,7 +13,7 @@ const ArticlesList = ({ data }) => {
               <img src={img} alt={title} />
             </div>
             <div className="details">
-              <Link to="/blog-1" className="title">
+              <Link to="/blog/6576576" className="title">
                 {title}
               </Link>
               <div className="container-2">
