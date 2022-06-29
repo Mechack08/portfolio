@@ -165,3 +165,19 @@ export const articles = [
     img: "./articles/input-adobxd.png",
   },
 ];
+
+export const userComment = [
+  {
+    id: 1,
+    fullname: "Kobius Makasi",
+    email: "mechackkobius@icloud.com",
+    comment:
+      "I really like the post and I would like to discuss more about it. Thank you.",
+  },
+  {
+    id: 2,
+    fullname: "Elaija Maekelson",
+    email: "makaelson65@gmail.com",
+    comment: "Wonderful.",
+  },
+];
