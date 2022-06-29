@@ -7,7 +7,7 @@ const Items = ({ type, data }) => {
       <div className="items">
         {data.map(({ title, link, img }, index) => {
           return (
-            <div className="item">
+            <div className="item" key={index}>
               <img src={img} alt={title} />
               <div className="item-detail">
                 <span>{title}</span>
