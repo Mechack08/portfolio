@@ -1,3 +1,15 @@
 .blog-container {
     padding: $mp-smscreen $mp-lgscreen;
 }
+
+@media screen and (max-width: 1150px) {
+    .blog-container {
+        padding: $mp-smscreen $mp-mdscreen;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .blog-container {
+        padding: $mp-smscreen $mp-smscreen;
+    }
+}
