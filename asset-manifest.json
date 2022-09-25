@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/8pro-porfolio-blog/static/css/main.46d27544.css",
+    "main.js": "/8pro-porfolio-blog/static/js/main.6f09e6d4.js",
+    "static/media/Cv 8pro English.pdf": "/8pro-porfolio-blog/static/media/Cv 8pro English.ff278d4ea5a7e59338ed.pdf",
+    "static/media/Logo.svg": "/8pro-porfolio-blog/static/media/Logo.240828e816965db5d3ba09f955dda525.svg",
+    "index.html": "/8pro-porfolio-blog/index.html",
+    "main.46d27544.css.map": "/8pro-porfolio-blog/static/css/main.46d27544.css.map",
+    "main.6f09e6d4.js.map": "/8pro-porfolio-blog/static/js/main.6f09e6d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46d27544.css",
+    "static/js/main.6f09e6d4.js"
+  ]
+}
