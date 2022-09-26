@@ -55,10 +55,6 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navigations">
-        <div className="dark-light">
-          <FiSun className="show-icon" />
-          <HiMoon className="hide-icon" />
-        </div>
         <nav className={hideMenus}>
           <span>
             {location.pathname === "/" ? (
@@ -84,11 +80,11 @@ const Navbar = () => {
               </span>
             </>
           )}
-          <span>
+          {/* <span>
             <Link to="/blog" className={activeLink("/blog")}>
               Blog
             </Link>
-          </span>
+          </span> */}
         </nav>
         <div className={menuClass} onClick={handleClass}>
           <div className="middle-line"></div>

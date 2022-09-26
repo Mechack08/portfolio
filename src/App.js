@@ -7,8 +7,6 @@ function App() {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/blog" element={<Blog />} />
-      <Route exact path="/blog/:id" element={<Article />} />
     </Routes>
   );
 }

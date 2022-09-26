@@ -1,13 +1,15 @@
 export const userExperience = [
   {
-    date: "2021 - Current",
+    _id: "1",
+    period: "2021 - Current",
     institut: "Freelance",
     position: "Web developer - UI/UX Designer",
     description:
       "As a web developer I worked on several projects, sometimes under clients or team mates pressure, despite all those pressures I'm happy because it made me stronger. ❤",
   },
   {
-    date: "2019 - 2020",
+    _id: "2",
+    period: "2019 - 2020",
     institut: "Training",
     position: "Web developer",
     description:
@@ -17,14 +19,16 @@ export const userExperience = [
 
 export const userEducation = [
   {
-    date: "2018 - 2020",
+    _id: "3",
+    period: "2018 - 2020",
     institut: "University - Master",
     position: "Computer Engineering",
     description:
       "Adventist University of Lukanga.  Butembo, Democratic Republuc of Congo",
   },
   {
-    date: "2015 - 2018",
+    _id: "4",
+    period: "2015 - 2018",
     institut: "University - Bachelor",
     position: "Economics and computer management",
     description:

@@ -1,28 +1,8 @@
 import React, { memo } from "react";
 import Items from "./portfolio/Items";
-
-import { useDispatch, useSelector } from "react-redux";
-import { getPortfolios } from "../actions/portfolio.action";
-import { useEffect } from "react";
+import { portfolioCode, portfolioDesign } from "../data";
 
 const Portfolio = memo(() => {
-  const dispatch = useDispatch();
-  const portfolios = useSelector((state) => state.portfolioReducer);
-
-  /* Organise data */
-  //Get Coding Portfolios
-  const codingPortfolios =
-    portfolios.data &&
-    portfolios.data.filter((item) => item.category === "web");
-
-  const designPortfolios =
-    portfolios.data &&
-    portfolios.data.filter((item) => item.category === "design");
-
-  useEffect(() => {
-    dispatch(getPortfolios());
-  }, [dispatch]);
-
   return (
     <section id="portfolio">
       <div className="header">
@@ -30,10 +10,10 @@ const Portfolio = memo(() => {
         <span>Portfolio</span>
       </div>
 
-      {portfolios.data ? (
+      {portfolioCode ? (
         <>
-          <Items type="Websites & Web Applications" data={codingPortfolios} />
-          <Items type="Design" data={designPortfolios} />
+          <Items type="Websites & Web Applications" data={portfolioCode} />
+          <Items type="Design" data={portfolioDesign} />
         </>
       ) : (
         <h1>Loading...</h1>
